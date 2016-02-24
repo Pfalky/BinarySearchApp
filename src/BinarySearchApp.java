@@ -11,13 +11,15 @@ public class BinarySearchApp {
         System.out.print("Enter next int, 'done' to stop, 'delete' to stop and delete first element: "); //выводим строку введите следующее инт значение или нажмите "хорош"
         String line = sc.next();// создаем строку ввода
         while (!line.equals("done")) {//пока в строке не введут "хорош"
-            mylist.add(Integer.parseInt(line)); //вызываем метод добавление в кучу элемента
+            myList.add(Integer.parseInt(line)); //вызываем метод добавление в кучу элемента//
             System.out.println(myList); // выводим кучу
             System.out.print("Enter next int, 'done' to stop, 'delete' to stop and delete first element: "); //выводим строку для ввода
             line = sc.next();
 
-        } //генерируем новую строку для ввода
+        }
+        System.out.println(myList);//генерируем новую строку для ввода
     }
+
 }
 
 

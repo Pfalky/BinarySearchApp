@@ -8,7 +8,7 @@ public class BinarySearch {
     public BinarySearch() {
     }
 
-    public int binarysearch(ArrayList){
+    public int binarysearch(ArrayList){ //TODO make a BinSrch class
         int searchpos;
 
         return 0;
