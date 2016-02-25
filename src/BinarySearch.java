@@ -15,11 +15,12 @@ public class BinarySearch {
 
     public static int binarysearch(int array[], int key, int left, int right){ //TODO make a BinSrch class
         int mid = left + (right-left)/2;
-        System.out.println(mid);
-        if (mid == key) return mid;
+             if (mid == key) {
+            System.out.println(mid); return mid;}
         else if  (array[mid] > key)
             return binarysearch(array, key, left, mid);
         else
-            return binarysearch(array, key, mid + 1, right);
+            return binarysearch(array, key, mid + 1, right);//TODO добавить проверку на отсутсвие числа в массиве
     }
+
 }

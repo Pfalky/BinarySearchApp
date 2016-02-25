@@ -26,21 +26,16 @@ public class BinarySearchApp {
         else {
             System.out.println(myList);
             for (int i = 0; i < myList.size(); i++) {
-                array[i] = myList.get(i);
-                System.out.println(array[i]);
-                System.out.println(myList.get(i));
-            }
+                array[i] = myList.get(i);}
             System.out.println("ВВедите число для поиска");
             String sKey = sc.next(); //TODO добавить проверку на ввод числа
             int key = Integer.parseInt(sKey);
             int left = array[0];
-            System.out.println(array[0]);
             int right = array[array.length-1]; //Todo тут есть ошибка (выдает 0)
-            System.out.println(array[array.length-1]);
-
 
             BinarySearch binSrch = new BinarySearch(array, key, left, right);
             binSrch.binarysearch(array, key, left, right);
+
         }
     }
 }
