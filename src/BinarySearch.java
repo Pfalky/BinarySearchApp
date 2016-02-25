@@ -5,6 +5,14 @@ import java.util.ArrayList;
  */
 public class BinarySearch {
 
+    int key, left, right;
+
+    public BinarySearch(int array[], int key, int left, int right) {
+        this.key = key;
+        this.left = left;
+        this.right = right;
+    }
+
     public static int binarysearch(int array[], int key, int left, int right){ //TODO make a BinSrch class
         int mid = left + (right-left)/2;
         if (mid == key) return mid;
