@@ -15,6 +15,7 @@ public class BinarySearch {
 
     public static int binarysearch(int array[], int key, int left, int right){ //TODO make a BinSrch class
         int mid = left + (right-left)/2;
+        System.out.println(mid);
         if (mid == key) return mid;
         else if  (array[mid] > key)
             return binarysearch(array, key, left, mid);
