@@ -5,12 +5,12 @@ import java.util.ArrayList;
  */
 public class BinarySearch {
 
-    public BinarySearch() {
-    }
-
-    public int binarysearch(ArrayList){ //TODO make a BinSrch class
-        int searchpos;
-
-        return 0;
+    public static int binarysearch(int array[], int key, int left, int right){ //TODO make a BinSrch class
+        int mid = left + (right-left)/2;
+        if (mid == key) return mid;
+        else if  (array[mid] > key)
+            return binarysearch(array, key, left, mid);
+        else
+            return binarysearch(array, key, mid + 1, right);
     }
 }
